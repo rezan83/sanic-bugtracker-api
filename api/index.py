@@ -193,4 +193,5 @@ async def hello_world(request):
     resp.set_body(data)
     return resp
 
-# app.run(port=8080)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=8000)
