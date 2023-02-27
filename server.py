@@ -6,6 +6,7 @@ app = Sanic(__name__)
 app.config.CORS_ORIGINS = "*"
 Extend(app)
 
+
 @app.get("/")
 async def hello_world(request):
     resp = json({"bugs": "databas"})
