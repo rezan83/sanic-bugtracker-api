@@ -8,7 +8,7 @@ Extend(app)
 
 
 @app.get("/")
-async def hello_world(request):
+async def index(request):
     resp = json({"bugs": "databas"})
     data = [{
             "id": 1,
